@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Load the dataset
-file_path = "cleaned_dataset.csv"  # Ensure this file exists
+file_path = "cleaned_dataset.csv"  
 try:
     df = pd.read_csv(file_path)
 except FileNotFoundError:
