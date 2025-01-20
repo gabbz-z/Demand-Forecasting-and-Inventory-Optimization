@@ -1,5 +1,3 @@
-# demand_forecast.py
-
 import pandas as pd
 import numpy as np
 from sklearn.ensemble import RandomForestRegressor
@@ -59,13 +57,13 @@ joblib.dump(model, model_file)
 print(f"Model saved as {model_file}")
 
 # Step 7: Example prediction
-new_data = X_test.iloc[:5]  # Replace with actual new data
+new_data = X_test.iloc[:5]  
 predictions = model.predict(new_data)
 
 print("Predictions for new data:")
 print(predictions)
 
-# Optional: Save predictions for further analysis
+#Save predictions for further analysis
 predicted_df = pd.DataFrame({
     "Actual": y_test.iloc[:5].values,
     "Predicted": predictions
